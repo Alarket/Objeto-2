@@ -4,24 +4,27 @@ import java.util.Random;
 public class Carro {
 
     private float distanciaRandomica;
-
+    private Car car;
     
 
     //nome do Carro
     private String nome;
     
-    public Carro(String nome){
+    public Carro(String nome,Car car){
         this.setNome(nome);
-        
+        this.car = car;
     }
     
     public void Andar(){
-        this.setDistanciaRandomica(new Random().nextInt(1,100)*0.01f);
-      
+        this.setDistanciaRandomica(new Random().nextInt(100));
+        
+        if(car!=null) {
+    	
+           car.update();
         }
         
         //this.getDistanciaRandomica();
-  
+    }
     
     public float getDistanciaRandomica() {
         return distanciaRandomica;

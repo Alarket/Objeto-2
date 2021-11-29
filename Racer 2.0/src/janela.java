@@ -9,7 +9,7 @@ public class janela extends JFrame{
 		add(fase = new Fase());
 		
 		setTitle("Racer 2");
-		setSize(1024,728);
+		setSize(350,550);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		this.setResizable(false);

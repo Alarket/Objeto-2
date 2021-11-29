@@ -20,15 +20,7 @@ public class Corrida {
             threads[i].start();   
             //System.out.println("Thread " + i + " iniciada");
         }
-//        for(int i = 0; i < grilos.length; i++){
-//            try {
-//                threads[i].join();
-//                //System.out.println("o " + threads[i].getGrilo().getNome() + " foi o " + (i + 1) + "° colocado");
-//            } catch (InterruptedException ex) {
-//                //Logger.getLogger(Corrida.class.getName()).log(Level.SEVERE, null, ex);
-//                ex.printStackTrace();
-//            }
-//        }
+
     }
 
     public int getLinhaChegada() {
